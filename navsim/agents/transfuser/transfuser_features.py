@@ -67,7 +67,7 @@ class TransfuserFeatureBuilder(AbstractFeatureBuilder):
         b0 = cameras.cam_b0.image
         
         stitched_image = np.concatenate([l0, f0, r0, b0], axis=1)
-        resized_image = cv2.resize(stitched_image, (stitched_image.shape[1] // 2, stitched_image.shape[0] // 2))
+        resized_image = cv2.resize(stitched_image, (stitched_image.shape[1] // 4, stitched_image.shape[0] // 4))
         # Compression with JPEG quality 30
         encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), 30]
         _, compressed_image = cv2.imencode('.jpg', resized_image, encode_param)
