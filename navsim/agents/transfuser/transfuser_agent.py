@@ -67,7 +67,7 @@ class TransfuserAgent(AbstractAgent):
             cam_r0=history_steps,
             cam_r1=False,
             cam_r2=False,
-            cam_b0=False,
+            cam_b0=history_steps,
             lidar_pc=history_steps if not self._config.latent else False,
         )
 
