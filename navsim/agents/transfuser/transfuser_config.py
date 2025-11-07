@@ -31,13 +31,13 @@ class TransfuserConfig:
     # new
     lidar_seq_len: int = 1
 
-    camera_width: int = 1024
+    camera_width: int = 1920
     camera_height: int = 256
     lidar_resolution_width = 256
     lidar_resolution_height = 256
 
     img_vert_anchors: int = 256 // 32
-    img_horz_anchors: int = 1024 // 32
+    img_horz_anchors: int = 1920 // 32
     lidar_vert_anchors: int = 256 // 32
     lidar_horz_anchors: int = 256 // 32
 
