@@ -107,5 +107,5 @@ pip install -e .
 ### 4. Install needed dependencies to integrate CARLA transfuser
 
 ```
-pip install beartype jaxtyping carla
+pip install beartype jaxtyping carla numba
 ```
