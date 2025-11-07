@@ -99,7 +99,7 @@ Finally, install navsim.
 To this end, create a new environment and install the required dependencies:
 
 ```bash
-conda env create --name navsim -f environment.yml
-conda activate navsim
+conda env create --name navsimv2.2 -f environment.yml
+conda activate navsimv2.2
 pip install -e .
 ```
