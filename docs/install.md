@@ -103,3 +103,9 @@ conda env create --name navsimv2.2 -f environment.yml
 conda activate navsimv2.2
 pip install -e .
 ```
+
+### 4. Install needed dependencies to integrate CARLA transfuser
+
+```
+pip install beartype jaxtyping carla
+```
