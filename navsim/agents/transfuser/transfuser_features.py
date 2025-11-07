@@ -354,9 +354,7 @@ class TransfuserTargetBuilder(AbstractTargetBuilder):
         :param coords: _description_
         :return: _description_
         """
-
-        # NOTE: remove half in backward direction
-        pixel_center = np.array([[0, self._config.bev_pixel_width / 2.0]])
+        pixel_center = np.array([[self._config.bev_pixel_height / 2.0, self._config.bev_pixel_width / 2.0]])
         coords_idcs = (coords / self._config.bev_pixel_size) + pixel_center
 
         return coords_idcs.astype(np.int32)

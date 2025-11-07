@@ -101,7 +101,7 @@ class TransfuserConfig:
     }
 
     bev_pixel_width: int = lidar_resolution_width
-    bev_pixel_height: int = lidar_resolution_height // 2
+    bev_pixel_height: int = lidar_resolution_height
     bev_pixel_size: float = 0.25
 
     num_bev_classes = 7
