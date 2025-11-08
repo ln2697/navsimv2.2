@@ -72,3 +72,16 @@ pip install -e .
 ```bash
 pip install beartype jaxtyping carla numba
 ```
+
+### 5. Build `navtrain` cache
+
+TODO
+
+### 6. Build test `metric_cache`
+If you are on TCML, run
+```bash
+bash $NAVSIM_DEVKIT_ROOT/scripts/run_metric_caching_tcml.sh
+```
+Otherwise, go to the directory and adapt the script.
+
+This will create the metric cache under `$NAVSIM_EXP_ROOT/metric_cache`, where `$NAVSIM_EXP_ROOT` is defined by the environment variable set during installation.
