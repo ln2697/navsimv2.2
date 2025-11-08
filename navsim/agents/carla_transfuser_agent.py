@@ -87,7 +87,7 @@ class CarlaTransfuserAgent(AbstractAgent):
             cam_r1=False,
             cam_r2=False,
             cam_b0=history_steps,
-            lidar_pc=history_steps if not self._config.latent else False,
+            lidar_pc=False,
         )
 
     def get_target_builders(self) -> List[AbstractTargetBuilder]:
