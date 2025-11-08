@@ -44,9 +44,12 @@ class CarlaTransfuserAgent(AbstractAgent):
         super().__init__(trajectory_sampling)
 
         self._config = config
-
+        
+        logger.info(f"Loading CARLA TransFuser model from input path: {checkpoint_path}")
         self._checkpoint_path = checkpoint_path.rsplit("/", 1)[0]
         self._model_filename = checkpoint_path.rsplit("/", 1)[1]
+        logger.info(f"Model filename: {self._model_filename}")
+        logger.info(f"Checkpoint path: {self._checkpoint_path}")
 
     def name(self) -> str:
         """Inherited, see superclass."""
