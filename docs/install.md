@@ -80,11 +80,13 @@ TODO
 ### 6. Build test `metric_cache_v2.2`
 If you are on TCML, run
 ```bash
-bash $NAVSIM_DEVKIT_ROOT/scripts/evaluation/run_metric_caching.sh
+bash $PROJECT_DIR/3rd_party/navsim_workspace/navsimv2.2/scripts/evaluation/run_metric_caching_warmup_two_stage.sh
+bash $PROJECT_DIR/3rd_party/navsim_workspace/navsimv2.2/scripts/evaluation/run_metric_caching_navtest.sh
+bash $PROJECT_DIR/3rd_party/navsim_workspace/navsimv2.2/scripts/evaluation/run_metric_caching_navhard.sh
 ```
 Otherwise, go to the directory and adapt the script.
 
-This will create the metric cache under `$NAVSIM_EXP_ROOT/metric_cache_v2.2`, where `$NAVSIM_EXP_ROOT` is defined by the environment variable set during installation.
+This will create the metric cache under `$NAVSIM_EXP_ROOT/metric_cache_navtest_v2.2`, `$NAVSIM_EXP_ROOT/metric_cache_hard_v2.2`, `$NAVSIM_EXP_ROOT/metric_cache_warmup_two_stage_v2.2` where `$NAVSIM_EXP_ROOT` is defined by the environment variable set during installation.
 
 ### 7. Notes for future
 - In case of weird errors, most likely redownloading data would be helpful.
