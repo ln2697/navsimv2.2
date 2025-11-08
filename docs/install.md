@@ -56,12 +56,6 @@ export NAVSIM_EXP_ROOT="${PROJECT_DIR}/3rd_party/navsim_workspace/exp"
 export OPENSCENE_DATA_ROOT="${PROJECT_DIR}/3rd_party/navsim_workspace/dataset"
 ```
 
-⏰ **Note:** The `navhard_two_stage` split is used for local testing of your model's performance in a two-stage pseudo closed-loop setup.
-In contrast, `warmup_two_stage` is a smaller dataset designed for validating and testing submissions to the [Hugging Face Warmup leaderboard](https://huggingface.co/spaces/AGC2025/e2e-driving-warmup).
-In other words, the results you obtain locally on `warmup_two_stage` should match the results you see after submitting to Hugging Face.
-`private_test_hard_two_stage` contains the challenge data.
-You will need it to generate a `submission.pkl` in order to participate in the official challenge on the [Hugging Face CPVR 2025 leaderboard](https://huggingface.co/spaces/AGC2025/e2e-driving-internal) (for more details, see [Submission](submission.md)).
-
 ### 3. Install the navsim-devkit
 
 Finally, install navsim.
