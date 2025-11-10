@@ -1,4 +1,4 @@
-_target_: navsim.agents.transfuser.transfuser_agent.TransfuserAgent
+_target_: navsim.agents.carla_transfuser_agent.CarlaTransfuserAgent
 _convert_: 'all'
 
 trajectory_sampling:
@@ -11,4 +11,3 @@ config:
   _convert_: 'all'
   latent: True
 checkpoint_path: null
-lr: 1e-4

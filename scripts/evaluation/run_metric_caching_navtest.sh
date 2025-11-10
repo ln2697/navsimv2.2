@@ -10,7 +10,7 @@
 #SBATCH --mem=200gb
 
 TRAIN_TEST_SPLIT=navtest
-CACHE_PATH=$NAVSIM_EXP_ROOT/metric_cache_v2.2
+CACHE_PATH=$NAVSIM_EXP_ROOT/metric_cache_navtest_v2.2
 
 export NAVSIM_DEVKIT_ROOT="${PROJECT_DIR}/3rd_party/navsim_workspace/navsimv2.2"
 export HYDRA_FULL_ERROR=1
