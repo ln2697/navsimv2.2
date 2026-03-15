@@ -57,8 +57,14 @@ Finally, install navsim.
 To this end, create a new environment and install the required dependencies:
 
 ```bash
+# Install navsimv2.2
+cd ${LEAD_PROJECT_ROOT}/3rd_party/navsim_workspace/navsimv2.2
 conda env create --name navsimv2.2 -f environment.yml
 conda activate navsimv2.2
+pip install -e . 
+
+# Install lead in navsimv2.2 conda environment
+cd $LEAD_PROJECT_ROOT
 pip install -e .
 ```
 
