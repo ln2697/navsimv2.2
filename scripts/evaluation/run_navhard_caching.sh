@@ -9,12 +9,10 @@
 #SBATCH --mail-user=long.nguyen@student.uni-tuebingen.de
 #SBATCH --mem=200gb
 
-TRAIN_TEST_SPLIT=navtest
-CACHE_PATH=$NAVSIM_EXP_ROOT/metric_cache_v2.2
-
-export NAVSIM_DEVKIT_ROOT="${PROJECT_DIR}/3rd_party/navsim_workspace/navsimv2.2"
-export HYDRA_FULL_ERROR=1
+TRAIN_TEST_SPLIT=navhard
+CACHE_PATH=${LEAD_PROJECT_ROOT}/3rd_party/navsim_workspace/exp/metric_cache_navhard
+export NAVSIM_DEVKIT_ROOT="${LEAD_PROJECT_ROOT}/3rd_party/navsim_workspace/navsimv2.2"
 
 python $NAVSIM_DEVKIT_ROOT/navsim/planning/script/run_metric_caching.py \
 train_test_split=$TRAIN_TEST_SPLIT \
-metric_cache_path=$CACHE_PATH
+cache.cache_path=$CACHE_PATH
