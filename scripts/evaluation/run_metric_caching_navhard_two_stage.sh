@@ -16,5 +16,5 @@ export NAVSIM_DEVKIT_ROOT="${LEAD_PROJECT_ROOT}/3rd_party/navsim_workspace/navsi
 export HYDRA_FULL_ERROR=1
 
 python $NAVSIM_DEVKIT_ROOT/navsim/planning/script/run_metric_caching.py \
-train_test_split=$TRAIN_TEST_SPLIT \
-metric_cache_path=$CACHE_PATH
+    train_test_split=$TRAIN_TEST_SPLIT \
+    metric_cache_path=$CACHE_PATH
